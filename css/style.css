@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+
+}
+
+.downArrow{
+         position: absolute;
+        top: 50vw;
+    left: 46vw;}
+
+
+.downArrow2{
+         position: absolute;
+        top: 118vw;
+        left: 46vw;
+    }
+
+.downArrow3{
+         position: absolute;
+        top: 184vw;
+        left: 46vw;
+    }
+    
+.dropbtn {
+    width:25%;
+    padding: 20px;
+    position: relative;
+    top: 1vw;
+    left: 1vw;
+    z-index: 100;
+}
+
+.dropbtn:hover{
+    width:26%;
+}
+
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+    font-family: Orbitron, sans-serif;
+  display: none;
+  position: absolute;
+    left:1.5vw;   
+  min-width: 3vw;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {width="30%";}
+
+/*intropage*/
+
+.intro-title {
+font-family: Apercu, sans-serif;
+font-size: 3vw;
+color: black;
+font-weight: 500;
+position: absolute;
+top:210vw;
+left:24vw;
+letter-spacing: 0.3vw;
+line-height: 3.5vw;
+
+
+}
+.intro p {
+font-family: Apercu, sans-serif;
+font-weight: 100;
+opacity: 1;
+width: 46vw;
+font-size: 1.3vw;
+letter-spacing: 0.03vw;
+line-height: 2vw;
+color: black;
+position: absolute;
+top: 215vw;
+left: 24vw;
+text-align: left;
+
+}
+
+.intro p2 {
+font-family: Apercu, sans-serif;
+font-weight: 100;
+opacity: 1;
+width: 46vw;
+font-size: 1.3vw;
+letter-spacing: 0.03vw;
+line-height: 2vw;
+color: black;
+position: absolute;
+top: 230vw;
+left: 24vw;
+text-align: left;
+font-weight: 800;
+
+}
+    
+    .start-to-try {
+        width:10vw;
+font-family: Apercu, sans-serif;
+font-size: 1.5vw;
+color: black;
+font-weight: bold;
+position: absolute;
+top:240vw;
+left:55vw;
+letter-spacing: 0.1vw;
+line-height: 3.5vw;
+}
+    
+      .arrow {
+font-family: Apercu, sans-serif;
+font-size: 3vw;
+color: black;
+font-weight: bold;
+position: absolute;
+top:240vw;
+left:65vw;
+letter-spacing: 0.1vw;
+line-height: 3.5vw;
+}
+
+    .intro{
+        position:absolute;
+top:0vw;
+left:3vw;
+        animation:fadeIn 2s;
+    }
