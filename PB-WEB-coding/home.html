@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>PSYCHOLOGICAL BOUNDARIES</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/template.css">
+
+<style>
+html {
+    font-family: Orbitron, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+background-color:rgb(225,221,210); /* For browsers that do not support gradients */
+/*background-image: linear-gradient(180deg, rgb(82,127,192)40%, rgb(196,232,239),white);  */
+    background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+background-attachment: fixed;
+}
+
+.section {
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+button {
+background-color:white; /* Green */
+border:none
+color: black;
+padding: 0.2vw 1vw;
+text-align: center;
+text-decoration: none;
+font-size: 1.5vw;
+cursor: pointer;
+width: 4vw;
+display: block;   
+}
+
+.btn-group{
+    position: fixed;
+    top:50vw;
+    left:93vw;
+}
+
+
+.title {
+    font-size: 2.3vw;
+    color: black;
+    letter-spacing: 0vw;
+    font-weight: 500;
+    position: absolute;
+    top: 27vw;
+    left: 20vw;
+    animation: bounceInUp 2s;
+
+}
+
+
+.pureEgg{
+     position: absolute;
+    top: 80vw;
+    left: 39vw;
+    animation: bounceInUp 2s;
+}
+
+.eggTheory{
+    font-size: 2.3vw;
+    color: black;
+    letter-spacing: 0.2vw;
+    line-height: 1.2;
+    font-weight: 100;
+    position: absolute;
+    top: 65vw;
+    left:7vw;
+    animation: fadeIn 3s;
+
+}
+
+.colorEgg{
+     position: absolute;
+    top: 136vw;
+    left: 26vw;
+    animation: bounceInUp 2s;
+}
+
+.explain{
+     font-family: Balto, sans-serif;
+font-weight: 100;
+opacity: 1;
+width: 31vw;
+font-size: 1.3vw;
+letter-spacing: 0.03vw;
+line-height: 2vw;
+color: black;
+position: absolute;
+top: 128vw;
+left: 5vw;
+text-align: left;
+animation: fadeIn 3s; }
+
+.important{
+    width: 30vw;
+    font-weight:500;
+    color:black;
+     text-decoration: underline;
+    animation: fadeIn 3s;
+}
+
+
+.intro{
+    position:absolute;
+top:-20vw;
+left:3vw;
+    animation:fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+}
+
+@keyframes shake {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+
+@keyframes bounceInUp {
+from,
+60%,
+75%,
+90%,
+to {
+-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 3000px, 0);
+transform: translate3d(0, 3000px, 0);
+}
+
+60% {
+opacity: 1;
+-webkit-transform: translate3d(0, -20px, 0);
+transform: translate3d(0, -20px, 0);
+}
+
+75% {
+-webkit-transform: translate3d(0, 10px, 0);
+transform: translate3d(0, 10px, 0);
+}
+
+90% {
+-webkit-transform: translate3d(0, -5px, 0);
+transform: translate3d(0, -5px, 0);
+}
+
+to {
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+}
+
+.bounceInUp {
+-webkit-animation-name: bounceInUp;
+animation-name: bounceInUp;
+}
+
+@-webkit-keyframes bounceOut {
+20% {
+-webkit-transform: scale3d(0.9, 0.9, 0.9);
+transform: scale3d(0.9, 0.9, 0.9);
+}
+
+50%,
+55% {
+opacity: 1;
+-webkit-transform: scale3d(1.1, 1.1, 1.1);
+transform: scale3d(1.1, 1.1, 1.1);
+}
+
+to {
+opacity: 0;
+-webkit-transform: scale3d(0.3, 0.3, 0.3);
+transform: scale3d(0.3, 0.3, 0.3);
+}
+}
+
+@keyframes bounceOut {
+20% {
+-webkit-transform: scale3d(0.9, 0.9, 0.9);
+transform: scale3d(0.9, 0.9, 0.9);
+}
+
+50%,
+55% {
+opacity: 1;
+-webkit-transform: scale3d(1.1, 1.1, 1.1);
+transform: scale3d(1.1, 1.1, 1.1);
+}
+
+to {
+opacity: 0;
+-webkit-transform: scale3d(0.3, 0.3, 0.3);
+transform: scale3d(0.3, 0.3, 0.3);
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+<div class="dropdown"><a href="home.html">
+<img class="dropbtn" src="images/PB-logo.png" width="15%"></a>
+<div class="dropdown-content">
+<a href="editor.html">Editor</a>
+<a href="types.html">Types</a>
+<a href="learn.html">Learn</a>
+   <a href="about.html">About</a>
+     <a href="typeface.html">Typeface</a>
+</div>
+</div>
+
+
+<div id="one" class="section stripe">
+
+<div class="title">Want to know what is Psychological Boundaries?</div>
+    <div class="btn-group"> <button class="up" onclick="scrollWin(0,-1000)">  ⬆︎  </button>
+        <button class="down" onclick="scrollWin(0,1000)">  ⬇︎  </button></div>
+
+
+</div>
+
+ <div id="two" class="section stripe">
+<img class="pureEgg" src="images/PureEgg.png" width="23%">
+<div class="eggTheory">PSYCHOLOGICAL<br> BOUNDARIES<br>
+ARE LIKE<br>
+EMOTIONAL EGGSHELLES, <br>PROTECTING US<br>
+AS INDIVIDUAL<br>
+IN OUR RELATIONSHIPS.</div>
+     
+
+
+</div>
+     <div id="three" class="section stripe">
+        <img class="colorEgg" src="images/6%20parts%20egg.png" width="55%">
+<div class="explain">The hexagon theory of psychological boundaries holds that psychological boundaries can be understood in terms of six components that together can be viewed as forming the parts of a hexagon. The hexagon is used as a metaphor, rather than as a strict geometric model. <div class="important">These six components are Control, Expectation, Refusal, Independence, Respectation and Indentification.</div>
+    </div>
+
+</div>
+
+
+
+<div id="four" class="section stripe">
+             <div class="intro">
+<div class="intro-title">Introduction</div>
+<p>This project is about psychological boundaries. Everyone has two kinds of living space, physical space and mental space. Personal boundaries mianly divided to physical and psychological boundaries. In contrast to the physical boundaries, psychological boundaries are invisible and untouchable. So we used to ignore psychological boundaries. However, psychological boundaries affect our interactions with others and can cause many relationship problems.</p>
+<p2>
+<strong>The project aims to help people visualize their psychological boundaries and establish healthy psychological boundaries.</strong></p2>
+               <a href="editor.html">
+  <div class="start-to-try">Start To Try</div>
+                   <div class="arrow">➡︎</div></a>
+ </div>   
+
+
+</div>
+
+
+
+<script>
+function scrollWin(x, y) {
+window.scrollBy(x, y);
+}
+</script>
+
+
+
+</body>
+
+</html>
