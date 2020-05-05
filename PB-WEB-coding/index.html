@@ -57,9 +57,10 @@ display: block;
     color: black;
     letter-spacing: 0vw;
     font-weight: 500;
+    text-align: center;
     position: absolute;
-    top: 27vw;
-    left: 20vw;
+    top: 24vw;
+    left: 25vw;
     animation: bounceInUp 2s;
 
 }
@@ -122,6 +123,22 @@ top:-20vw;
 left:3vw;
     animation:fadeIn 2s;
 }
+    
+    .introP1{
+        font-family: Balto, sans-serif;
+font-weight: 100;
+opacity: 1;
+width: 44vw;
+font-size: 1.3vw;
+letter-spacing: 0.03vw;
+line-height: 2vw;
+color: black;
+        position:absolute;
+        top:217vw;
+        left:24vw;
+        
+    }   
+    
 
 @-webkit-keyframes fadeIn {
 from {
@@ -260,6 +277,8 @@ opacity: 0;
 -webkit-transform: scale3d(0.3, 0.3, 0.3);
 transform: scale3d(0.3, 0.3, 0.3);
 }
+    
+    
 
 
 
@@ -273,23 +292,24 @@ transform: scale3d(0.3, 0.3, 0.3);
 
 <div class="container">
 
-<div class="dropdown"><a href="home.html">
+<div class="dropdown"><a href="index.html">
 <img class="dropbtn" src="images/PB-logo.png" width="15%"></a>
 <div class="dropdown-content">
 <a href="editor.html">Editor</a>
 <a href="types.html">Types</a>
+     <a href="instructor%20.html">Indictor</a>
 <a href="learn.html">Learn</a>
-   <a href="about.html">About</a>
      <a href="typeface.html">Typeface</a>
+    <a href="about.html">About</a>
 </div>
 </div>
 
 
 <div id="one" class="section stripe">
 
-<div class="title">Want to know what is Psychological Boundaries?</div>
-    <div class="btn-group"> <button class="up" onclick="scrollWin(0,-1000)">  ⬆︎  </button>
-        <button class="down" onclick="scrollWin(0,1000)">  ⬇︎  </button></div>
+<div class="title">Do you want to know <br>what Psychological Boundaries are?</div>
+    <div class="btn-group"> <button class="up" onclick="scrollWin(0,-1100)">  ⬆︎  </button>
+        <button class="down" onclick="scrollWin(0,1100)">  ⬇︎  </button></div>
 
 
 </div>
@@ -306,8 +326,8 @@ IN OUR RELATIONSHIPS.</div>
 
 </div>
      <div id="three" class="section stripe">
-        <img class="colorEgg" src="images/6%20parts%20egg.png" width="55%">
-<div class="explain">The hexagon theory of psychological boundaries holds that psychological boundaries can be understood in terms of six components that together can be viewed as forming the parts of a hexagon. The hexagon is used as a metaphor, rather than as a strict geometric model. <div class="important">These six components are Control, Expectation, Refusal, Independence, Respectation and Indentification.</div>
+        <img class="colorEgg" src="gif/egg-divide-animation.gif" width="55%">
+<div class="explain">The hexagon theory of psychological boundaries holds that psychological boundaries can be understood in terms of six components that together can be viewed as forming the parts of a hexagon. The hexagon is used as a metaphor, rather than as a strict geometric model. <div class="important">These six components are Control, Expectation, Refusal, Independence, Respect and Indentification.</div>
     </div>
 
 </div>
@@ -317,7 +337,7 @@ IN OUR RELATIONSHIPS.</div>
 <div id="four" class="section stripe">
              <div class="intro">
 <div class="intro-title">Introduction</div>
-<p>This project is about psychological boundaries. Everyone has two kinds of living space, physical space and mental space. Personal boundaries mianly divided to physical and psychological boundaries. In contrast to the physical boundaries, psychological boundaries are invisible and untouchable. So we used to ignore psychological boundaries. However, psychological boundaries affect our interactions with others and can cause many relationship problems.</p>
+<div class="introP1">This project is about psychological boundaries. Everyone has two living spaces: physical  and mental. Personal boundaries mainly divided to physical and psychological boundaries. In contrast to the physical boundaries, psychological boundaries are invisible and untouchable. So we used to ignore psychological boundaries. However, psychological boundaries affect our interactions with others and can cause many relationship problems.</div>
 <p2>
 <strong>The project aims to help people visualize their psychological boundaries and establish healthy psychological boundaries.</strong></p2>
                <a href="editor.html">
@@ -327,7 +347,7 @@ IN OUR RELATIONSHIPS.</div>
 
 
 </div>
-
+    </div>
 
 
 <script>
@@ -335,7 +355,6 @@ function scrollWin(x, y) {
 window.scrollBy(x, y);
 }
 </script>
-
 
 
 </body>
