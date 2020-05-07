@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 body {
     background-color: black;
 
@@ -24,10 +26,10 @@ body {
 }
 
 .dropdown-content {
-    font-family: Orbitron, sans-serif;
+  font-family: 'Orbitron', sans-serif;
   display: none;
   position: absolute;
-    left:1.5vw;   
+  left:1.5vw;   
   min-width: 3vw;
   z-index: 1;
 }
